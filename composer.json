@@ -1,0 +1,13 @@
+{
+    "name": "theod02/castor-docker",
+    "description": "Add set of classes for using docker",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Theo D",
+            "email": "theo.d02290@gmail.com"
+        }
+    ]
+}
