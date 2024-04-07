@@ -1,9 +1,7 @@
 {
   "name": "theod02/castor-docker",
   "description": "Set of classes for using docker",
-  "type": "library",
-  "license": "MIT",
-  "version": "1.0.0",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "Theo D",
