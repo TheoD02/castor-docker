@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Castor\Utils\Docker;
+namespace TheoD02\Castor\Docker;
 
 class CastorDockerContext
 {

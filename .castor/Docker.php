@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace TheoD02\Castor\Docker;
+
 use Castor\Context;
 use Symfony\Component\Process\Process;
 
@@ -51,12 +53,12 @@ class Docker
     public function mergeCommands(mixed ...$commands): string
     {
         $commandsAsArrays = array_map(
-            callback: static fn ($command) => \is_array($command) ? $command : explode(' ', $command),
+            callback: static fn($command) => \is_array($command) ? $command : explode(' ', $command),
             array: $commands
         );
         $flattened = array_reduce(
             array: $commandsAsArrays,
-            callback: static fn ($carry, $item) => [...$carry, ...$item],
+            callback: static fn($carry, $item) => [...$carry, ...$item],
             initial: []
         );
 

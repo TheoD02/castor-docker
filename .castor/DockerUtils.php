@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace TheoD02\Castor\Docker;
+
 class DockerUtils
 {
     public static function isRunningInsideContainer(bool $throw = false): bool

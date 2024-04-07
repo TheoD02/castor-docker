@@ -1,13 +1,18 @@
 {
-    "name": "theod02/castor-docker",
-    "description": "Set of classes for using docker",
-    "type": "library",
-    "license": "MIT",
-    "version": "1.0.0",
-    "authors": [
-        {
-            "name": "Theo D",
-            "email": "theo.d02290@gmail.com"
-        }
-    ]
+  "name": "theod02/castor-docker",
+  "description": "Set of classes for using docker",
+  "type": "library",
+  "license": "MIT",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Theo D",
+      "email": "theo.d02290@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TheoD02\\Castor\\Docker\\": ".castor/"
+    }
+  }
 }
