@@ -2,8 +2,6 @@
 
 declare(strict_types=1);
 
-namespace TheoD02\Castor\Docker;
-
 class CastorDockerContext
 {
     public function __construct(

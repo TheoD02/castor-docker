@@ -2,10 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TheoD02\Castor\Docker;
-
 use Castor\Context;
-use Castor\Utils\Docker\CastorDockerContext;
 use Symfony\Component\Process\Process;
 
 use function Castor\context;

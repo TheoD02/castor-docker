@@ -9,10 +9,5 @@
       "name": "Theo D",
       "email": "theo.d02290@gmail.com"
     }
-  ],
-  "autoload": {
-    "psr-4": {
-      "TheoD02\\Castor\\Docker\\": ".castor/"
-    }
-  }
+  ]
 }
