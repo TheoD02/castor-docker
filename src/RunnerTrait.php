@@ -69,7 +69,7 @@ trait RunnerTrait
     private function getDockerContext(): CastorDockerContext
     {
         if ($this->allowRunningUsingDocker() === false) {
-            throw new RuntimeException('This command should be only called when running with Docker.');
+            throw new \RuntimeException('This command should be only called when running with Docker.');
         }
 
         return $this->withDockerContext();
@@ -89,7 +89,7 @@ trait RunnerTrait
         $docker = $this->castorContext->data['docker'] ?? null;
 
         if ($docker === null) {
-            throw new RuntimeException(
+            throw new \RuntimeException(
                 'A array of CastorDockerContext is required to run this command outside a container.'
             );
         }
