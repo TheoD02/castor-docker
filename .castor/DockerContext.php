@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-class CastorDockerContext
+namespace TheoD02\Castor\Docker;
+
+class DockerContext
 {
     public function __construct(
         public string $container,
