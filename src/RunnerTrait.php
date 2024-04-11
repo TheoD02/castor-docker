@@ -8,8 +8,12 @@ use Castor\Context;
 use Symfony\Component\Process\Process;
 
 use function Castor\context;
+use function Castor\import;
 use function Castor\io;
 use function Castor\run;
+
+// This file is required to be able to run commands with Docker.
+import(__DIR__ . '/functions.php');
 
 /**
  * This trait is used for running commands.
@@ -26,7 +30,8 @@ trait RunnerTrait
 
     public function __construct(
         private readonly Context $castorContext
-    ) {
+    )
+    {
     }
 
     /**
