@@ -6071,8 +6071,3 @@ class DockerTrustSigner
         return $this->docker->runCommand();
     }
 }
-
-function docker(?Context $context = null): Docker
-{
-    return new Docker($context ?? context());
-}
