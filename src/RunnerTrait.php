@@ -10,7 +10,6 @@ use Symfony\Component\Process\Process;
 use function Castor\context;
 use function Castor\io;
 use function Castor\run;
-use function TheoD02\Castor\Docker\Functions\docker;
 
 /**
  * This trait is used for running commands.
