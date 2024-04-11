@@ -1,9 +1,9 @@
 <?php
 
-namespace TheoD02\Castor\Docker\Functions;
+namespace TheoD02\Castor\Docker;
 
-use TheoD02\Castor\Docker\Docker;
 use Castor\Context;
+use function Castor\context;
 
 function docker(?Context $context = null): Docker
 {
