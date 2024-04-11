@@ -6,7 +6,7 @@ namespace TheoD02\Castor\Docker;
 
 class DockerUtils
 {
-    public static function isRunningInsideContainer(bool $throw = false): bool
+    public function isRunningInsideContainer(bool $throw = false): bool
     {
         $isRunningInsideContainer = file_exists('/.dockerenv');
 
