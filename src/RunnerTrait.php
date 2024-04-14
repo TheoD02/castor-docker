@@ -200,7 +200,7 @@ trait RunnerTrait
         $commands = $this->mergeCommands($this->getBaseCommand(), $this->commands);
         $this->commands = [];
 
-        $isRunningInsideContainer = DockerUtils::isRunningInsideContainer();
+        $isRunningInsideContainer = docker()->utils()->isRunningInsideContainer();
         $dockerContext = null;
         if ($this->allowRunningUsingDocker()) {
             $dockerContext = $this->getDockerContext();

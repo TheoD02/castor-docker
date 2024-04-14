@@ -1692,7 +1692,7 @@ class Docker
      */
     public function utils(): DockerUtils
     {
-        return new DockerUtils(docker: $this);
+        return new DockerUtils();
     }
 }
 
