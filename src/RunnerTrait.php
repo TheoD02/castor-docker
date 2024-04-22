@@ -209,7 +209,7 @@ trait RunnerTrait
         if ($isRunningInsideContainer === false && $dockerContext !== null) {
             $this->preRunCommand();
 
-            return docker()->compose()->exec(
+            return docker($this->castorContext)->compose()->exec(
                 service: $dockerContext->serviceName,
                 args: [$commands],
                 user: $dockerContext->user,
