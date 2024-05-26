@@ -34,7 +34,9 @@ class Docker
             } elseif ($value === null) {
                 $this->commands[] = $key;
             } elseif (\is_array($value) && array_key_first($value) === 0) {
-                $this->commands[] = $key . ' ' . implode(' ', $value);
+                foreach ($value as $v) {
+                    $this->commands[] = $key . ' ' . $v;
+                }
             } elseif (\is_array($value)) {
                 foreach ($value as $k => $v) {
                     $this->commands[] = $key . ' ' . $k . '=' . $v;
